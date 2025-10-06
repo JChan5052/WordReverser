@@ -43,9 +43,9 @@ public class wordsFile {
  
  public String invert(String toBeInverted){
   String temp="";
-  for (int i=39;!(i==0);i=i-1){
-    temp = temp + toBeInverted.charAt(i);
-  }
+ for (int i = toBeInverted.length() - 1; i >= 0; i--) {
+            temp += toBeInverted.charAt(i);
+        }
   return temp;
  }
 
@@ -81,6 +81,60 @@ public class wordsFile {
     }
     ret = ret + invert(temp) + "\n";
   }
+  return ret;
+ }
+
+ public String diagonalsBottomHalf(){
+String ret = "";
+for (int j=0;j<words.size();j++){
+  for (int i=0;i<words.size();i++){
+    if (i+j<40){
+    ret = ret + words.get(i+j).charAt(i);
+    }
+  }
+  ret = ret + "\n";
+}
+  return ret;
+ }
+
+ public String invertdiagonalsBottomHalf(){
+String ret = "";
+for (int j=0;j<words.size();j++){
+  String temp="";
+  for (int i=0;i<words.size();i++){
+    if (i+j<40){
+    temp = temp + words.get(i+j).charAt(i);
+    }
+  }
+  ret = ret + invert(temp)+ "\n";
+}
+  return ret;
+ }
+
+public String diagonalsTopHalf(){
+String ret = "";
+for (int j=0;j<words.size();j++){
+  for (int i=0;i<words.size();i++){
+    if (i+j<40){
+    ret = ret + words.get(i).charAt(i+j);
+    }
+  }
+  ret = ret + "\n";
+}
+  return ret;
+ }
+
+  public String invertdiagonalsTopHalf(){
+String ret = "";
+for (int j=0;j<words.size();j++){
+  String temp="";
+  for (int i=0;i<words.size();i++){
+    if (i+j<40){
+    temp = temp + words.get(i).charAt(i+j);
+    }
+  }
+  ret = ret + invert(temp)+ "\n";
+}
   return ret;
  }
 }

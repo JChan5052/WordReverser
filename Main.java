@@ -33,11 +33,11 @@ public class Main
     words.add("OPBKFNLILNTRXWXNTTUQCGXMJWQKOXHCDLGZAIHI");
     words.add("ELFVANMXEJTVCSZCHJEJOKKDWRUZPGSKPSOFLZFK");
     words.add("KVNITCRPVFDOOERGMRXPKSBTBXEHXBVPAQZGDWFA");
-    words.add("TENLLRWFPAAFQPNZCSLTQHCJKYIVITARHMQNKZFC");
+    words.add("TENLLRWFPAAFQPNZCSLTQHCJKYIVITAHRMQNKZFC");
     words.add("EQRSEDRXTCDQMEWEGHAUHGCIRLGOQYHNUNORBZSV");
     words.add("UZJYKPTGUHCOITVHGDEOIWYEWXLFVTKTJKNURBIE");
     words.add("ROOINBGCWYXCIHSJJNFCZVLFYNVAJZBCEIRCAYFE");
-    words.add("ZXQTFAXJCDDYANVBQEXLIPYKAQVBAQEQPGRTSWCO");
+    words.add("ZXQTFAXJICDDYANVBQEXLIPYKAQVBQEQPGRTSWCO");
     words.add("EOMNDBBCGSAYRGTKNJWZFCWRTYUKQZYVUYOBXUVX");
     words.add("OGXSJARDVFKLSTLMVXEEAZRSDBCQCIKNWRPASJJL");
     words.add("QGXFKCECAGAADDOOJIDGWTFATWUCLIDRASCSISDJ");
@@ -46,14 +46,37 @@ public class Main
     words.add("WAWYHJCEPKTMXAGKRIROWAACBJCUIEJDNAVODROC");
  
     wordsFile test = new wordsFile(words);
- //   System.out.print(test.Rows());
- //   System.out.println("\n");
-   // System.out.print(test.invertRows());
-  //  System.out.print(test.checkLength());
-  //  test.checkLengthStrict();
 
+    System.out.print("All Rows Forward");
+    System.out.println("\n");
+    System.out.println(test.Rows());
+    System.out.println("\n");
+    System.out.print("All Rows Backward");
+    System.out.println("\n");
+    System.out.println(test.invertRows());
+ 
+  System.out.print ("\n");
+  System.out.print("All Columns Forward");
+  System.out.println("\n");
   System.out.println(test.Columns());
   System.out.println("\n");
+  System.out.print("All Columns Backward");
+  System.out.println("\n");
   System.out.println(test.invertColumns());
+
+  System.out.print ("\n");
+  System.out.print("Diagonals BottomHalf Forward");
+  System.out.println("\n");
+  System.out.println(test.diagonalsBottomHalf());System.out.print ("\n");
+  System.out.print("Diagonals BottomHalf Backward");
+  System.out.println("\n");
+  System.out.println(test.invertdiagonalsBottomHalf());
+  System.out.print("Diagonals TopHalf Forward");
+  System.out.println("\n");
+  System.out.println(test.diagonalsTopHalf());System.out.print ("\n");
+  System.out.print("Diagonals TopHalf Backward");
+  System.out.println("\n");
+  System.out.println(test.invertdiagonalsTopHalf());
+
 }
 }
