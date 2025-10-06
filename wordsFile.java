@@ -23,7 +23,7 @@ public class wordsFile {
   Boolean check=false;
   for (int i=0;i<words.size();i++)
   {
-    if (!(words.get(i).length()==40)){
+    if (!(words.get(i).length()==words.size())){
       if (check==false) realret="";
       check = true;
       realret= realret + ret + (i+1) + "." + "\n";
@@ -88,7 +88,7 @@ public class wordsFile {
 String ret = "";
 for (int j=0;j<words.size();j++){
   for (int i=0;i<words.size();i++){
-    if (i+j<40){
+    if (i+j<words.size()){
     ret = ret + words.get(i+j).charAt(i);
     }
   }
@@ -102,7 +102,7 @@ String ret = "";
 for (int j=0;j<words.size();j++){
   String temp="";
   for (int i=0;i<words.size();i++){
-    if (i+j<40){
+    if (i+j<words.size()){
     temp = temp + words.get(i+j).charAt(i);
     }
   }
@@ -115,7 +115,7 @@ public String diagonalsTopHalf(){
 String ret = "";
 for (int j=0;j<words.size();j++){
   for (int i=0;i<words.size();i++){
-    if (i+j<40){
+    if (i+j<words.size()){
     ret = ret + words.get(i).charAt(i+j);
     }
   }
@@ -129,12 +129,16 @@ String ret = "";
 for (int j=0;j<words.size();j++){
   String temp="";
   for (int i=0;i<words.size();i++){
-    if (i+j<40){
+    if (i+j<words.size()){
     temp = temp + words.get(i).charAt(i+j);
     }
   }
   ret = ret + invert(temp)+ "\n";
 }
   return ret;
+ }
+
+ public void check(){
+ System.out.println(words.size());
  }
 }
