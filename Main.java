@@ -4,49 +4,22 @@ public class Main
     public static void main(String[] args)
 {
     ArrayList<String> words = new ArrayList<String>();
-    words.add("DUTQSFCHMLXASLIRERGTOPGCKHUKPITFIGCWYLPD");
-    words.add("NUKGMBCZYKELWUDPEBFYOUMLTKGDFVJKUUSLWPLT");
-    words.add("ZCLDWJYXLWJPYMCLCAOYSZGEQXSCUDRYNWYGFYVI");
-    words.add("GSALMONRCJIEBAWUTUXELSQXHSEQIPFAOGBPNNSV");
-    words.add("GQXSAYSGEYFCOADLLDEFECTOROZROJONPQZFLEXQ");
-    words.add("VHMOGHARBDDARZEWTIOWBTZASIXZNSKZUDWGYYUF");
-    words.add("QVJFZBARDUDCYKQTGGAVQRESTDPFENIMRACJTROJ");
-    words.add("CJENLOTNCGTAQVDLMNVPBBETEUTAPQAXICUNQKDV");
-    words.add("TSUPODHIISCGMTVUXLPJZDODNEOREEWMJYACTINA");
-    words.add("GEUBZUYKAHCAMCAMZBYYPHFBRXHBUHVCMZIGWPOR");
-    words.add("EJJTKLELZBEKNZAHRYZTFXSJAEHAVSCIVNRMOGQL");
-    words.add("QKYGETBJYEGMPNXLRRSFIAYSGULUZTSHIVESWWQT");
-    words.add("EYYNPUDEVQMWDPUCFIZHWZFCODTTSROMQDALRADT");
-    words.add("CUPZTGTRYJGRVICRBOMGUEAKRKWICOEKZVFTHXXS");
-    words.add("OWGKAANXPHATZPHWMCCAJYXRYDIEUHSSWYSXVCEW");
-    words.add("WTHADQLWXKSJWOZQTNWSNIEBQLORRNZNZDQGBBIT");
-    words.add("EJJTMSSEUNTCBJNUGHHIECOPRAJRSYNCIFEVDHYZ");
-    words.add("DYOWWSRFTDISZRFFIHYKPBAIARIJIDVKFRMNYOQZ");
-    words.add("BHVTURGTWPETSKNTDFBVWGKZJAXRRJVYCELYQKAH");
-    words.add("PGFBNFITOYRKMPBNFGMSEIKCGPSNYDIDRCTAPUEI");
-    words.add("RTNAOGJLUQXOOOZCJXNOAIGHXIRCRMJHINDWQZRH");
-    words.add("ACQBSRFQUJZPENQLAISBZGHYOMQDCUPOMPEYNMPN");
-    words.add("GRGLMXCROQLXXCYVMVPVGTTLYYGRXLIQSOLGCYLO");
-    words.add("GHSFIZTOIQOAWENHCMGQHLIMCCVDJLKAOKVVGXOX");
-    words.add("EMKJRYKNCZIHTAFGIZKTUJBPJATZDEYANXWSAIJI");
-    words.add("PJVGCQNFLVZHSUAEPMPSHMTCNZZXVBGVZQENMMQW");
-    words.add("OPBKFNLILNTRXWXNTTUQCGXMJWQKOXHCDLGZAIHI");
-    words.add("ELFVANMXEJTVCSZCHJEJOKKDWRUZPGSKPSOFLZFK");
-    words.add("KVNITCRPVFDOOERGMRXPKSBTBXEHXBVPAQZGDWFA");
-    words.add("TENLLRWFPAAFQPNZCSLTQHCJKYIVITAHRMQNKZFC");
-    words.add("EQRSEDRXTCDQMEWEGHAUHGCIRLGOQYHNUNORBZSV");
-    words.add("UZJYKPTGUHCOITVHGDEOIWYEWXLFVTKTJKNURBIE");
-    words.add("ROOINBGCWYXCIHSJJNFCZVLFYNVAJZBCEIRCAYFE");
-    words.add("ZXQTFAXJICDDYANVBQEXLIPYKAQVBQEQPGRTSWCO");
-    words.add("EOMNDBBCGSAYRGTKNJWZFCWRTYUKQZYVUYOBXUVX");
-    words.add("OGXSJARDVFKLSTLMVXEEAZRSDBCQCIKNWRPASJJL");
-    words.add("QGXFKCECAGAADDOOJIDGWTFATWUCLIDRASCSISDJ");
-    words.add("IGNZNZJYNUTFZAAGILXHHGBHLZTBPYRNQEZWYBUU");
-    words.add("YMWJZOOJNDRDGYQKADAHEKVYRWDGCLGBAINFHLBV");
-    words.add("WAWYHJCEPKTMXAGKRIROWAACBJCUIEJDNAVODROC");
+    words.add(""); //repeat this for as many rows as there are
+    words.add(""); //repeat this for as many rows as there are
+    words.add(""); //repeat this for as many rows as there are
+    words.add(""); //repeat this for as many rows as there are
+    words.add(""); //repeat this for as many rows as there are
+    words.add(""); //repeat this for as many rows as there are
+    words.add(""); //repeat this for as many rows as there are
+    words.add(""); //repeat this for as many rows as there are
+
+   
+   
  
     wordsFile test = new wordsFile(words);
 
+
+    System.out.println(test.checkLength());
     System.out.print("All Rows Forward");
     System.out.println("\n");
     System.out.println(test.Rows());
